@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BanVeXeKhachModelStoreContainer" CdmEntityContainer="BanVeXeKhachEntities1">
+    <EntitySetMapping Name="Buses">
+      <EntityTypeMapping TypeName="BanVeXeKhachModel.Bus">
+        <MappingFragment StoreEntitySet="Buses">
+          <ScalarProperty Name="BusID" ColumnName="BusID" />
+          <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+          <ScalarProperty Name="BusNumber" ColumnName="BusNumber" />
+          <ScalarProperty Name="DepartureTime" ColumnName="DepartureTime" />
+          <ScalarProperty Name="ArrivalTime" ColumnName="ArrivalTime" />
+          <ScalarProperty Name="TotalSeats" ColumnName="TotalSeats" />
+          <ScalarProperty Name="AvailableSeats" ColumnName="AvailableSeats" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentMethods">
+      <EntityTypeMapping TypeName="BanVeXeKhachModel.PaymentMethod">
+        <MappingFragment StoreEntitySet="PaymentMethods">
+          <ScalarProperty Name="MethodID" ColumnName="MethodID" />
+          <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="BanVeXeKhachModel.Payment">
+        <MappingFragment StoreEntitySet="Payments">
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="MethodID" ColumnName="MethodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Routes">
+      <EntityTypeMapping TypeName="BanVeXeKhachModel.Route">
+        <MappingFragment StoreEntitySet="Routes">
+          <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+          <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+          <ScalarProperty Name="StartLocation" ColumnName="StartLocation" />
+          <ScalarProperty Name="EndLocation" ColumnName="EndLocation" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tickets">
+      <EntityTypeMapping TypeName="BanVeXeKhachModel.Ticket">
+        <MappingFragment StoreEntitySet="Tickets">
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="BusID" ColumnName="BusID" />
+          <ScalarProperty Name="SeatNumber" ColumnName="SeatNumber" />
+          <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TicketStatuses">
+      <EntityTypeMapping TypeName="BanVeXeKhachModel.TicketStatus">
+        <MappingFragment StoreEntitySet="TicketStatuses">
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="BanVeXeKhachModel.UserRole">
+        <MappingFragment StoreEntitySet="UserRoles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="BanVeXeKhachModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

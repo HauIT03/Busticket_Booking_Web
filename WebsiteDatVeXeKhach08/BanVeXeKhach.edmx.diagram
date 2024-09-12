@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fbda930a908c4104b6a8f36abcdb203c" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="BanVeXeKhachModel.Bus" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanVeXeKhachModel.PaymentMethod" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanVeXeKhachModel.Payment" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanVeXeKhachModel.Route" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanVeXeKhachModel.Ticket" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanVeXeKhachModel.TicketStatus" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanVeXeKhachModel.UserRole" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanVeXeKhachModel.User" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <AssociationConnector Association="BanVeXeKhachModel.FK__Buses__RouteID__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="BanVeXeKhachModel.FK_Tickets_Buses" ManuallyRouted="false" />
+        <AssociationConnector Association="BanVeXeKhachModel.FK__Payments__Method__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="BanVeXeKhachModel.FK__Payments__Ticket__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="BanVeXeKhachModel.FK__Tickets__StatusI__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="BanVeXeKhachModel.FK__Tickets__UserID__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="BanVeXeKhachModel.FK_Users_UserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
